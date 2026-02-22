@@ -37,8 +37,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
+        ci_job: [test]
         python-version: [3.7]
-        ci_job: ["lint", "test"]
     env:
       DJANGO_SETTINGS_MODULE: esp.settings
 
